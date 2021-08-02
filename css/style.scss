@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F6F9;
+    margin: 0;
+    padding: 0;
+}
+
+.currentPoke{
+    width: 70vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    padding: 3rem;
+    .searcher{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        .getPokeName{
+            border: none;
+            width: auto;
+            height: 100px;
+            background-color: rgba(128, 128, 128, 0.4);
+            border-radius: 2rem;
+            color: white;
+            padding: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        button{
+            border: none;
+            height: 50%;
+            background-color: rgba(128, 128, 128, 0.4);
+            border-radius: 2rem;
+            color: white;
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin: 1rem 0 0 1rem;
+            &:hover{
+                background-color: rgba(128, 128, 128, 0.6);
+                cursor: pointer;
+            }
+        }
+    }
+    .poke{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        height: 70%;
+        justify-content: space-evenly;
+        .pokeDetails{
+            width: auto;
+            color: white;
+            padding: 1rem;
+        }
+        #pokeImg{
+            width: auto;
+            height:auto;
+        }
+    }
+}
